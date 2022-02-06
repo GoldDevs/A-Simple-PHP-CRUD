@@ -9,10 +9,6 @@ jobs:
         operating-system: ['ubuntu-latest']
         php-versions: ['7.4']
         phpunit-versions: ['latest']
-        include:
-        - operating-system: 'ubuntu-latest'
-          php-versions: '7.2'
-          phpunit-versions: '8.5.21'
           
     services:
       mysql:
@@ -27,10 +23,10 @@ jobs:
 
     steps:
     - name: Setup PHP
-      uses: shivammathur/setup-php@v2
+      uses: shivammathur/setup-php@verbose
       with:
         php-version: ${{ matrix.php-versions }}
-        extensions: mbstring, intl
+        extensions: mbstring, intl, dom, fileinfo, mysql
         ini-values: post_max_size=256M, max_execution_time=180
         coverage: none
         tools: none
