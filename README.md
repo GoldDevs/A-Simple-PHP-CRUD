@@ -1,5 +1,3 @@
 # Blog
-## A Blog written fully in PHP 
+## A Simple PHP CRUD 
 
-### Source for DavSrc's blog 
-http://blog.opensc.cf
