@@ -20,7 +20,7 @@ require 'scripts.php';
 $hostname = "localhost";
 $dbname = "blogdb";
 $username = "blogcntroot";
-$password = "2118312904444";
+$password = "root";
 
 
 
